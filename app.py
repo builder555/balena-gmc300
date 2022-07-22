@@ -23,7 +23,8 @@ def get_serial_port():
                 break
         except:
             continue
-    raise ExceptionNoSerialPort
+    else:
+        raise ExceptionNoSerialPort
 
 @dataclass
 class Monitor():
