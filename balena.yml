@@ -1,4 +1,4 @@
-name: balena-gmc300
+name: gmc300
 description: >-
   Reads CPM values from a GMC-300/320 geiger counter
 version: 0.1.0
