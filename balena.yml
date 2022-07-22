@@ -1,0 +1,22 @@
+name: gmc300
+description: >-
+  Reads CPM values from a GMC-300/320 geiger counter
+version: 0.1.0
+type: sw.application
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/builder555/balena-gmc300'
+  logo:
+    type: blob.asset
+    data:
+      url: 'https://raw.githubusercontent.com/builder555/balena-gmc300/master/logo.png'
+data:
+  defaultDeviceType: raspberrypi3
+  supportedDeviceTypes:
+    - raspberrypi4-64
+    - fincm3
+    - raspberrypi3
+    - raspberrypi3-64
+    - raspberrypi400-64

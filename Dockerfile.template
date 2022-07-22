@@ -1,0 +1,14 @@
+ARG BALENA_ARCH=%%BALENA_ARCH%%
+
+FROM balenalib/$BALENA_ARCH-debian-python:3.9
+ENV UDEV=on
+
+WORKDIR /usr/src/app
+COPY . .
+
+RUN pip3 install paho-mqtt pyserial
+# RUN pip3 install pipenv && pipenv install
+
+CMD python app.py
+# CMD pipenv run start
+

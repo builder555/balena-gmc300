@@ -1,0 +1,6 @@
+**/.*
+Pipfile.lock
+balena.yml
+build.sh
+logo.png
+readme.md
